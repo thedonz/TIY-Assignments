@@ -69,6 +69,7 @@ Examples of JavaScript code from the selected assignment
     * Variable: `elements`
     * Value:`document.getElementsByClassName("reveal");`
     
+
 6. 
 
   ```javascript
