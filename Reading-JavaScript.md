@@ -88,4 +88,50 @@ Examples of JavaScript code from the selected assignment
 7. 
 
   ```javascript
-    
+    var elts = document.getElementsByClassName("sparkline");
+  ```
+  
+  * Variable: `elts`
+  * Value: `document.getElementsByClassName("sparkline");`
+
+8. 
+
+  ```javascript
+    var canvas = document.createElement("canvas"); 
+        canvas.width = width;
+        canvas.height = height;
+        canvas.title = content;
+        elt.innerHTML = "";
+        elt.appendChild(canvas);
+  ```
+  
+  * Variable: `canvas`
+  * Value: `document.createElement("canvas");`
+  
+9. 
+
+  ```javascript
+     var types = e.dataTransfer.types;
+        if (!types ||
+            (types.contains && types.contains("Files")) ||
+            (types.indexOf && types.indexOf("Files") != -1)) {
+            droptarget.classList.add("active");
+            return false;
+        }
+  ```
+  
+  * If Statement: `if (!types ||`
+  * Value: `return false;`
+  
+10. 
+
+  ```javascript
+    function reconnect() {
+            if (aborted) return;
+            if (xhr.status >= 300) return;
+            setTimeout(connect, retrydelay)
+  ```
+  
+  * Conditional function: `function reconnect() {`
+  * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
+
