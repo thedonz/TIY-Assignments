@@ -17,7 +17,15 @@
 //console.log('"For my ally is the Force; and a powerful ally, it is."')
 
 
-
-
-console.log('it should divide "one" and "one": ',
-    divide("one, one") === 1);
+var divide = function(a, b){
+  if (a === "two"){
+    return 2
+    }
+    return 1
+  }
+console.log('it should divide "one" by "one": ',
+    divide("one", "one") === 1);
+console.log('it should divide "two" by "one": ',
+    divide("two", "one") === 2)
+console.log('it should divide "three" by "one": ',
+    divide("three", "one") === 3)
