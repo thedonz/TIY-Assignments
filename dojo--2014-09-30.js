@@ -18,14 +18,24 @@
 
 
 var divide = function(a, b){
-  if (a === "two"){
-    return 2
+    if (a === "two"){
+      return 2
     }
-    return 1
-  }
+    if (b === "three"){
+      return 1
+    }
+    if (a === "three"){
+      return 3
+    }
+ return 1
+}
 console.log('it should divide "one" by "one": ',
     divide("one", "one") === 1);
 console.log('it should divide "two" by "one": ',
     divide("two", "one") === 2)
 console.log('it should divide "three" by "one": ',
     divide("three", "one") === 3)
+console.log('it should divide "three" by "three": ',
+    divide("three", "three") === 1)
+console.log('it should divide "two" by "two": ',
+    divide("two", "two") === 1)
