@@ -109,6 +109,7 @@ Examples of JavaScript code from the selected assignment
   * Variable: `canvas`
   * Value: `document.createElement("canvas");`
   
+
 9. 
 
   ```javascript
@@ -124,6 +125,7 @@ Examples of JavaScript code from the selected assignment
   * If Statement: `if (!types ||`
   * Value: `return false;`
   
+
 10. 
 
   ```javascript
