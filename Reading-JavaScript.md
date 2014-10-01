@@ -22,7 +22,7 @@ Examples of JavaScript code from the selected assignment
   ```
   * Variable: `toc` (terms of condition)
   * Value: getElementByID <- is asking for this document
-  
+
   * Condition: `if`
   * Value: toc = `document.createElement("div")` <-- If there is no document, create one.
 
@@ -40,7 +40,7 @@ Examples of JavaScript code from the selected assignment
             element.onpropertychange = upcaseOnPropertyChange;`  
   **Make Uppercase if they're lowercase**
 
-4. 
+4.
 
   ```javascript
     function updateTime() {
@@ -50,12 +50,12 @@ Examples of JavaScript code from the selected assignment
     var minangle = min*6;
     var hourangle = hour*30;
   ```
-  
+
   * Function: `updateTime()`
   * Variables: `now`, `min`, `hour`, `minangle`, `hourangle`.
   * Values: `new Date()`: `now.getMinutes()`; `(now.getHours() % 12) + min/60;`; `min*6`; `hour*30`;
 
-5. 
+5.
 
   ```javascript
     var elements = document.getElementsByClassName("reveal");
@@ -65,12 +65,12 @@ Examples of JavaScript code from the selected assignment
         addRevealHandler(title, elt);
     }
     ```
-    
+
     * Variable: `elements`
     * Value:`document.getElementsByClassName("reveal");`
-    
 
-6. 
+
+6.
 
   ```javascript
     function onLoad(f) {
@@ -86,31 +86,31 @@ Examples of JavaScript code from the selected assignment
   * Modifier: `else if (window.addEventListener)`
   * Modifier `else if (window.attachEvent) window.attachEvent("onload", f);`
 
-7. 
+7.
 
   ```javascript
     var elts = document.getElementsByClassName("sparkline");
   ```
-  
+
   * Variable: `elts`
   * Value: `document.getElementsByClassName("sparkline");`
 
-8. 
+8.
 
   ```javascript
-    var canvas = document.createElement("canvas"); 
+    var canvas = document.createElement("canvas");
         canvas.width = width;
         canvas.height = height;
         canvas.title = content;
         elt.innerHTML = "";
         elt.appendChild(canvas);
   ```
-  
+
   * Variable: `canvas`
   * Value: `document.createElement("canvas");`
-  
 
-9. 
+
+9.
 
   ```javascript
      var types = e.dataTransfer.types;
@@ -121,12 +121,12 @@ Examples of JavaScript code from the selected assignment
             return false;
         }
   ```
-  
+
   * If Statement: `if (!types ||`
   * Value: `return false;`
-  
 
-10. 
+
+10.
 
   ```javascript
     function reconnect() {
@@ -134,7 +134,26 @@ Examples of JavaScript code from the selected assignment
             if (xhr.status >= 300) return;
             setTimeout(connect, retrydelay)
   ```
-  
+
   * Conditional function: `function reconnect() {`
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
+11.
+
+  ```javascript
+      var welcome = "Welcome to the JavaScript Express line!"
+
+  ```
+
+12.
+  ```javascript
+      var welcome = "Welcome to the JavaScript Exrpess Line!"
+      var safetyTip = "Look both ways before crossing the tracks."
+      welcome + "\n" + safetyTip
+  ```
+
+13.
+    ```javascript
+      var longString = "I wouldn't want to retype this String every time."
+      longString.length
+    ```
