@@ -9,8 +9,8 @@ function test(actual,expected, success) {
  * Check Writing
  *
  * Given an integer representing money -- $1234.56 -- convert
- * that into it's string representatation in English words. For
- * example, "1234.56" us "one thousand two hundred thirty four
+ * that into its string representatation in English words. For
+ * example, "1234.56" to "one thousand two hundred thirty four
  * and 56/100", just like you would see on a check.
  *
  * In a lot of ways, this is the inverse of the "String Calculator"
@@ -28,5 +28,3 @@ function test(actual,expected, success) {
   *
   * Make up you own, too.
   */
-  
-  
