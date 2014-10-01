@@ -157,3 +157,31 @@ Examples of JavaScript code from the selected assignment
       var longString = "I wouldn't want to retype this String every time."
       longString.length
     ```
+
+14.
+    ```javascript
+      for ( var trainNumber = 1; trainNumber <= trainsOperational;  trainNumber++  ){
+
+        console.log("Train #" + trainNumber + " is running.");
+
+      }
+    ```
+15.
+    ```javascript
+      for(var number = 5; number > 0; number--) {
+
+        console.log(number);
+      }
+    ```
+
+16.
+
+    ```javascript
+      var trainsOperational = 8;
+      var totalTrains = 12;
+
+      for(var stoppedTrain = trainsOperational + 1; stoppedTrain <= totalTrains; stoppedTrain++){
+
+        console.log("Train #" + stoppedTrain + " is not operational.");
+
+      }
