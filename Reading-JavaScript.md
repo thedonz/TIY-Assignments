@@ -2,43 +2,43 @@
 Examples of JavaScript code from the selected assignment
 
 
-1.
+```javascript
+var interest = parseFloat(apr.value) / 100 / 12;
+```
+* Variable: `interest`
+* Value: (result of code) divided by 100 divided by 12
 
-  ```javascript
-  var interest = parseFloat(apr.value) / 100 / 12;
-  ```
-  * Variable: `interest`
-  * Value: (result of code) divided by 100 divided by 12
+----
 
-2.
+```javascript
+var toc = document.getElementById("TOC");
+  if (!toc) {
+      toc = document.createElement("div");
+      toc.id = "TOC";
+      document.body.insertBefore(toc, document.body.firstChild);
+  }
+```
+* Variable: `toc` (terms of condition)
+* Value: getElementByID <- is asking for this document
 
-  ```javascript
-  var toc = document.getElementById("TOC");
-    if (!toc) {
-        toc = document.createElement("div");
-        toc.id = "TOC";
-        document.body.insertBefore(toc, document.body.firstChild);
-    }
-  ```
-  * Variable: `toc` (terms of condition)
-  * Value: getElementByID <- is asking for this document
-  
-  * Condition: `if`
-  * Value: toc = `document.createElement("div")` <-- If there is no document, create one.
+* Condition: `if`
+* Value: toc = `document.createElement("div")` <-- If there is no document, create one.
 
-3.
+----
 
-  ```javascript
-  function forceToUpperCase(element) {
-    if (typeof element === "string") element = document.getElementById(element);
-    element.oninput = upcase;
-    element.onpropertychange = upcaseOnPropertyChange;
-  ```
-  * Condition: `if`
-  * Value: `(typeof element === "string") element = document.getElementById(element);
-            element.oninput = upcase;
-            element.onpropertychange = upcaseOnPropertyChange;`  
-  **Make Uppercase if they're lowercase**
+```javascript
+function forceToUpperCase(element) {
+  if (typeof element === "string") element = document.getElementById(element);
+  element.oninput = upcase;
+  element.onpropertychange = upcaseOnPropertyChange;
+```
+* Condition: `if`
+* Value: `(typeof element === "string") element = document.getElementById(element);
+          element.oninput = upcase;
+          element.onpropertychange = upcaseOnPropertyChange;`  
+**Make Uppercase if they're lowercase**
+
+----
 
 4. 
 
@@ -138,3 +138,21 @@ Examples of JavaScript code from the selected assignment
   * Conditional function: `function reconnect() {`
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
+----
+
+```javascript
+// Emulate the EventSource API for browsers that do not support it.
+// Requires an XMLHttpRequest that sends readystatechange events whenever
+// there is new data written to a long-lived HTTP connection. Note that
+// this is not a complete implementation of the API: it does not support the
+// readyState property, the close() method, nor the open and error events.
+// Also event registration for message events is through the onmessage 
+// property only--this version does not define an addEventListener method.
+```
+
+* Comments:
+  * Symbol: `//`
+  * Name: Inline Comment
+  * Meaning: Ignore everything until the end of the line
+
+---
