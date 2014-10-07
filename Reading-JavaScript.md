@@ -40,7 +40,7 @@ function forceToUpperCase(element) {
 
 ----
 
-4. 
+4.
 
   ```javascript
     function updateTime() {
@@ -50,12 +50,12 @@ function forceToUpperCase(element) {
     var minangle = min*6;
     var hourangle = hour*30;
   ```
-  
+
   * Function: `updateTime()`
   * Variables: `now`, `min`, `hour`, `minangle`, `hourangle`.
   * Values: `new Date()`: `now.getMinutes()`; `(now.getHours() % 12) + min/60;`; `min*6`; `hour*30`;
 
-5. 
+5.
 
   ```javascript
     var elements = document.getElementsByClassName("reveal");
@@ -65,12 +65,12 @@ function forceToUpperCase(element) {
         addRevealHandler(title, elt);
     }
     ```
-    
+
     * Variable: `elements`
     * Value:`document.getElementsByClassName("reveal");`
-    
 
-6. 
+
+6.
 
   ```javascript
     function onLoad(f) {
@@ -86,31 +86,31 @@ function forceToUpperCase(element) {
   * Modifier: `else if (window.addEventListener)`
   * Modifier `else if (window.attachEvent) window.attachEvent("onload", f);`
 
-7. 
+7.
 
   ```javascript
     var elts = document.getElementsByClassName("sparkline");
   ```
-  
+
   * Variable: `elts`
   * Value: `document.getElementsByClassName("sparkline");`
 
-8. 
+8.
 
   ```javascript
-    var canvas = document.createElement("canvas"); 
+    var canvas = document.createElement("canvas");
         canvas.width = width;
         canvas.height = height;
         canvas.title = content;
         elt.innerHTML = "";
         elt.appendChild(canvas);
   ```
-  
+
   * Variable: `canvas`
   * Value: `document.createElement("canvas");`
-  
 
-9. 
+
+9.
 
   ```javascript
      var types = e.dataTransfer.types;
@@ -121,12 +121,12 @@ function forceToUpperCase(element) {
             return false;
         }
   ```
-  
+
   * If Statement: `if (!types ||`
   * Value: `return false;`
-  
 
-10. 
+
+10.
 
   ```javascript
     function reconnect() {
@@ -134,7 +134,7 @@ function forceToUpperCase(element) {
             if (xhr.status >= 300) return;
             setTimeout(connect, retrydelay)
   ```
-  
+
   * Conditional function: `function reconnect() {`
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
@@ -146,7 +146,7 @@ function forceToUpperCase(element) {
 // there is new data written to a long-lived HTTP connection. Note that
 // this is not a complete implementation of the API: it does not support the
 // readyState property, the close() method, nor the open and error events.
-// Also event registration for message events is through the onmessage 
+// Also event registration for message events is through the onmessage
 // property only--this version does not define an addEventListener method.
 ```
 
