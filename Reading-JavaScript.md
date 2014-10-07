@@ -156,3 +156,36 @@ function forceToUpperCase(element) {
   * Meaning: Ignore everything until the end of the line
 
 ---
+
+```javascript
+if (window.EventSource === undefined) {     // If EventSource is not defined,
+```
+
+* Symbol: `if`
+  * Type: keyword
+  * Name: condition
+  * Meaning: ??
+*  Symbol: `()`
+  * Type: Operator
+  *  Name: Parentheses
+  *  Meaning: conditional
+* Symbol: `window`
+  * Type: identifier
+  * Name: variable
+  * Meaning: ?
+* Symbol: `.`
+  * Type: Operator
+  * Name: dot
+  * Meaning: ?
+* Symbol: `EventSource`
+  * Type: identifier
+  * Name: variable
+  * Meaning: ?
+* Symbol: `===`
+  * Type: Operator
+  * Name: Triple Equal (aka Strict Equal)
+  * Meaning: compares strictly equal to
+* Symbol: `undefined`
+  * Type: undefined
+  * Name: undefined
+  * Meaning: Identifier has not been assigned.
