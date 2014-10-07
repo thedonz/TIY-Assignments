@@ -2,43 +2,43 @@
 Examples of JavaScript code from the selected assignment
 
 
-1.
+```javascript
+var interest = parseFloat(apr.value) / 100 / 12;
+```
+* Variable: `interest`
+* Value: (result of code) divided by 100 divided by 12
 
-  ```javascript
-  var interest = parseFloat(apr.value) / 100 / 12;
-  ```
-  * Variable: `interest`
-  * Value: (result of code) divided by 100 divided by 12
+----
 
-2.
+```javascript
+var toc = document.getElementById("TOC");
+  if (!toc) {
+      toc = document.createElement("div");
+      toc.id = "TOC";
+      document.body.insertBefore(toc, document.body.firstChild);
+  }
+```
+* Variable: `toc` (terms of condition)
+* Value: getElementByID <- is asking for this document
 
-  ```javascript
-  var toc = document.getElementById("TOC");
-    if (!toc) {
-        toc = document.createElement("div");
-        toc.id = "TOC";
-        document.body.insertBefore(toc, document.body.firstChild);
-    }
-  ```
-  * Variable: `toc` (terms of condition)
-  * Value: getElementByID <- is asking for this document
+* Condition: `if`
+* Value: toc = `document.createElement("div")` <-- If there is no document, create one.
 
-  * Condition: `if`
-  * Value: toc = `document.createElement("div")` <-- If there is no document, create one.
+----
 
-3.
+```javascript
+function forceToUpperCase(element) {
+  if (typeof element === "string") element = document.getElementById(element);
+  element.oninput = upcase;
+  element.onpropertychange = upcaseOnPropertyChange;
+```
+* Condition: `if`
+* Value: `(typeof element === "string") element = document.getElementById(element);
+          element.oninput = upcase;
+          element.onpropertychange = upcaseOnPropertyChange;`  
+**Make Uppercase if they're lowercase**
 
-  ```javascript
-  function forceToUpperCase(element) {
-    if (typeof element === "string") element = document.getElementById(element);
-    element.oninput = upcase;
-    element.onpropertychange = upcaseOnPropertyChange;
-  ```
-  * Condition: `if`
-  * Value: `(typeof element === "string") element = document.getElementById(element);
-            element.oninput = upcase;
-            element.onpropertychange = upcaseOnPropertyChange;`  
-  **Make Uppercase if they're lowercase**
+----
 
 4.
 
@@ -138,67 +138,54 @@ Examples of JavaScript code from the selected assignment
   * Conditional function: `function reconnect() {`
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
-11.
+----
 
-  ```javascript
-      var welcome = "Welcome to the JavaScript Express line!"
+```javascript
+// Emulate the EventSource API for browsers that do not support it.
+// Requires an XMLHttpRequest that sends readystatechange events whenever
+// there is new data written to a long-lived HTTP connection. Note that
+// this is not a complete implementation of the API: it does not support the
+// readyState property, the close() method, nor the open and error events.
+// Also event registration for message events is through the onmessage
+// property only--this version does not define an addEventListener method.
+```
 
-  ```
+* Comments:
+  * Symbol: `//`
+  * Name: Inline Comment
+  * Meaning: Ignore everything until the end of the line
 
-12.
-  ```javascript
-      var welcome = "Welcome to the JavaScript Exrpess Line!"
-      var safetyTip = "Look both ways before crossing the tracks."
-      welcome + "\n" + safetyTip
-  ```
+---
 
-13.
-    ```javascript
-      var longString = "I wouldn't want to retype this String every time."
-      longString.length
-    ```
+```javascript
+if (window.EventSource === undefined) {     // If EventSource is not defined,
+```
 
-14.
-    ```javascript
-      for ( var trainNumber = 1; trainNumber <= trainsOperational;  trainNumber++  ){
-
-        console.log("Train #" + trainNumber + " is running.");
-
-      }
-    ```
-15.
-    ```javascript
-      for(var number = 5; number > 0; number--) {
-
-        console.log(number);
-      }
-    ```
-
-16.
-
-    ```javascript
-      var trainsOperational = 8;
-      var totalTrains = 12;
-
-      for(var stoppedTrain = trainsOperational + 1; stoppedTrain <= totalTrains; stoppedTrain++){
-
-        console.log("Train #" + stoppedTrain + " is not operational.");
-
-      }
-    ```
-17.
-
-    ```javascript
-      var totalTrains = 12;
-      var trainsOperational = 8;
-
-      var trainNumber = 1;
-      while(trainNumber <= trainsOperational){
-              console.log("Train #" + trainNumber + " is running.");
-              trainNumber++;
-      }
-      for(var stoppedTrain = trainsOperational + 1; stoppedTrain <== totalTrains; stoppedTrain++){
-              console.log("Train #" + stoppedTrain + " is not operational.");
-      }
-    ```
-18.
+* Symbol: `if`
+  * Type: keyword
+  * Name: condition
+  * Meaning: ??
+*  Symbol: `()`
+  * Type: Operator
+  *  Name: Parentheses
+  *  Meaning: conditional
+* Symbol: `window`
+  * Type: identifier
+  * Name: variable
+  * Meaning: ?
+* Symbol: `.`
+  * Type: Operator
+  * Name: dot
+  * Meaning: ?
+* Symbol: `EventSource`
+  * Type: identifier
+  * Name: variable
+  * Meaning: ?
+* Symbol: `===`
+  * Type: Operator
+  * Name: Triple Equal (aka Strict Equal)
+  * Meaning: compares strictly equal to
+* Symbol: `undefined`
+  * Type: undefined
+  * Name: undefined
+  * Meaning: Identifier has not been assigned.
