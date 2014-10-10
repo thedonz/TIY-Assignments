@@ -189,3 +189,28 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
   * Type: undefined
   * Name: undefined
   * Meaning: Identifier has not been assigned.
+
+---
+
+```javascript
+  function updateTime() {
+  var now = new Date();
+  var min = now.getMinutes();
+  var hour = (now.getHours() % 12) + min/60;
+  var minangle = min*6;
+  var hourangle = hour*30;
+```
+
+*Symbol: `function`
+  *Type: keyword
+  *Name: Function
+  *Meaning: Begins a function object.
+*Symbol: `updateTime`
+  *Type: identifier
+  *Name: updateTime()
+  *Meaning: Will be the word typed to call the function to action.
+*Symbol: `var`
+  *Type: keyword
+  *Name: Variable
+  *Meaning: Variable assignor. Assigns to the word a value.
+*Symbol:
