@@ -195,29 +195,28 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 ```javascript
   function updateTime() {
   var now = newDate();
-  var min = now.getMinutes();
-  var hour = (now.getHours() % 12) + min/60;
-  var minangle = min*6;
-  var hourangle = hour*30;
+
 ```
 
-*Symbol: `function`
-  *Type: keyword
-  *Name: Function
-  *Meaning: Begins a function object.
-*Symbol: `updateTime`
-  *Type: identifier
-  *Name: updateTime()
-  *Meaning: Will be the word typed to call the function to action.
-*Symbol: `var`
-  *Type: keyword
-  *Name: Variable
-  *Meaning: Variable assignor. Assigns to the word a value.
-*Symbol: `now`
-  *Type: identifier
-  *Name: now
-  *Meaning: Identifier is what will contain the value.
-*Symbol: `newDate();``
-  *Type: value (also known as a literal)
-  *Name: newDate()
-  *Meaning: Will hold the value for the now identifier.
+* Symbol: `function`
+  * Type: keyword
+  * Name: Function
+  * Meaning: Begins a function object.
+* Symbol: `updateTime`
+  * Type: identifier
+  * Name: updateTime()
+  * Meaning: Will be the word typed to call the function to action.
+* Symbol: `var`
+  * Type: keyword
+  * Name: Variable
+  * Meaning: Variable assignor. Assigns to the word a value.
+* Symbol: `now`
+  * Type: identifier
+  * Name: now
+  * Meaning: Identifier is what will contain the value.
+* Symbol: `newDate();``
+  * Type: value (also known as a literal)
+  * Name: newDate()
+  * Meaning: Will hold the value for the now identifier.
+
+---
