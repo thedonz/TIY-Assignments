@@ -194,7 +194,7 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 
 ```javascript
   function updateTime() {
-  var now = new Date();
+  var now = newDate();
   var min = now.getMinutes();
   var hour = (now.getHours() % 12) + min/60;
   var minangle = min*6;
@@ -213,4 +213,11 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
   *Type: keyword
   *Name: Variable
   *Meaning: Variable assignor. Assigns to the word a value.
-*Symbol:
+*Symbol: `now`
+  *Type: identifier
+  *Name: now
+  *Meaning: Identifier is what will contain the value.
+*Symbol: `newDate();``
+  *Type: value (also known as a literal)
+  *Name: newDate()
+  *Meaning: Will hold the value for the now identifier.
