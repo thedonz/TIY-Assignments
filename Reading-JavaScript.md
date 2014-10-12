@@ -195,7 +195,6 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 ```javascript
   function updateTime() {
   var now = newDate();
-
 ```
 
 * Symbol: `function`
