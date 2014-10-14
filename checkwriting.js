@@ -28,3 +28,4 @@ function test(actual,expected, success) {
   *
   * Make up you own, too.
   */
+console.log("LLOOOYYD!!!")
