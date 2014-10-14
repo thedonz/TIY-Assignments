@@ -28,4 +28,65 @@ function test(actual,expected, success) {
   *
   * Make up you own, too.
   */
-console.log("LLOOOYYD!!!")
+
+//Typing up and analyzing @asoper29's checkwriting code for review.
+
+function checkWriting(){
+  var ones = ["zero","one","two","three","four","five","six","seven","eight","nine","ten"];
+
+  var tens = ["zero","ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+
+  var teens = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+
+  var hundreds = " hundred";
+
+  var thousands = " thousand";
+
+  return {
+    toEnglish : function(val){
+      val = Number(val).toFixed(2);
+      var checkEnd = ' ' + val.slice(-2) + '/100 Dollars';
+      var dollars = val.slice(0,-3);
+
+        if (dollars < 20) {
+          return ones[dollars] + checkEnd;
+        }
+        else if (dollars < 100) {
+          if (dollars % 10 === 0) {
+            return tens[dollars[0]] + checkEnd;
+          } else {
+            return tens[dollars[0]] + " " + ones[dollars[1]] + checkEnd;
+          }
+        }
+        else if (dollars < 1000) {
+          if (dollars % 100 === 0) {
+            return ones[dollars[0]] + hundreds + checkEnd;
+          }
+          else if (dollars % 10 === 0) {
+            return ones[dollars[0]] + hundreds + " " + tens[dollars[1]] + checkEnd;
+          }
+          else if (dollars[2] < 2) {
+            return ones[dollars[0]] + hundreds + " " + teens[dollars[2]] + checkEnd;
+          } else {
+            return ones[dollars[0]] + hundreds + " " + tens[dollars[1]] + " " + ones[dollars[2]] + checkEnd;
+          }
+        }
+        else if (dollars < 1000) {
+          if (dollars % 1000 === 0) {
+            return ones[dollars[0]] + thousands + checkEnd;
+          }
+          else if (dollars % 100 === 0) {
+            return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + checkEnd;
+          }
+          else if (dollars % 10 === 0) {
+            return ones[dollars[0]] + thousands + " " + ones [dollars[1]] + hundreds + " " + tens[dollars[2]] + checkEnd;
+          }
+          else if (dollars[2] < 2) {
+            return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + " " + teens[dollars[3]] + checkEnd;
+          } else {
+            return ones[dollars[0]] + thousands + " " + ones[dollars[1]] + hundreds + " " + tens[dollars[2]] + " " + ones[dollars[3]] + checkEnd;
+          }
+        }
+    }
+  }
+}
