@@ -90,3 +90,11 @@ function checkWriting(){
     }
   }
 }
+
+var assert = require('chai').assert;
+
+describe('checkWriting().toEnglish()', function() {
+  it('should convert "0" to "zero"', function() {
+    assert.equal(checkWriting().toEnglish(0), 'zero 00/100 Dollars');
+  });
+})
