@@ -37,17 +37,43 @@ console.log(popped); // 5
 
 ```javascript
 Array.prototype.push()
+
+var droids = ['R2-D2', 'C-3PO'];
+var total = droids.push('R5-D4', '4-LOM', 'C1-10P');
+
+console.log(droids); // ['R2-D2', 'C-3PO', 'R5-D4', '4-LOM', 'C1-10P']
+console.log(total); // 5
+
 ```
-// Adds one or more elements to the end of an array and returns the new length of the array.
+// Adds new elements to the end of the array specified by the .push() command
+
+----
 
 ```javascript
 Array.prototype.reverse()
+
+var mySuitcase = ['Socks', 'Lightsaber', 'Communicator'];
+mySuitcase.reverse();
+
+console.log(mySuitcase) // ['Communicator', 'Lightsaber', 'Socks']
+
 ```
 
-// Reverses the order of the elements of an array — the first becomes the last, and the last becomes the first.
+// Reverses the order of the elements of an array.
+
 
 ```javascript
 Array.prototype.shift()
+
+var crewEnterprise = ['Red Shirt', ' Kirk', ' Spock', ' McCoy', ' Sulu'];
+
+console.log('Enterprise Crew before away mission: ' + crewEnterprise);
+
+var shifted = crewEnterprise.shift();
+
+console.log('Enterprise Crew after away mission: ' + crewEnterprise);
+console.log('This crew member didn\'t make it: ' + shifted);
+
 ```
 
 // Removes the first element from an array and returns that element.
