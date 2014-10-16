@@ -71,7 +71,7 @@ function checkWriting(){
             return ones[dollars[0]] + hundreds + " " + tens[dollars[1]] + " " + ones[dollars[2]] + checkEnd;
           }
         }
-        else if (dollars < 1000) {
+        else if (dollars < 10000) {
           if (dollars % 1000 === 0) {
             return ones[dollars[0]] + thousands + checkEnd;
           }
@@ -97,4 +97,10 @@ describe('checkWriting().toEnglish()', function() {
   it('should convert "0" to "zero"', function() {
     assert.equal(checkWriting().toEnglish(0), 'zero 00/100 Dollars');
   });
+  it('should convert "1234.56" to "one thousand two hundred and thirty four"', function() {
+    assert.equal(checkWriting().toEnglish(1234.56), 'one thousand two hundred thirty four 56/100 Dollars');
+  })
+  it('should convert "9000.50" to "nine thousand 50/100 Dollars"', function() {
+    assert.equal(checkWriting().toEnglish(9000.50), 'nine thousand 50/100 Dollars');
+  })
 })

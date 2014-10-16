@@ -139,15 +139,15 @@ function forceToUpperCase(element) {
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
 ----
+NEW!
+----
+
+1.
 
 ```javascript
+
 // Emulate the EventSource API for browsers that do not support it.
-// Requires an XMLHttpRequest that sends readystatechange events whenever
-// there is new data written to a long-lived HTTP connection. Note that
-// this is not a complete implementation of the API: it does not support the
-// readyState property, the close() method, nor the open and error events.
-// Also event registration for message events is through the onmessage
-// property only--this version does not define an addEventListener method.
+
 ```
 
 * Comments:
@@ -156,6 +156,8 @@ function forceToUpperCase(element) {
   * Meaning: Ignore everything until the end of the line
 
 ---
+
+2.
 
 ```javascript
 if (window.EventSource === undefined) {     // If EventSource is not defined,
@@ -192,6 +194,8 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 
 ---
 
+3.
+
 ```javascript
   function updateTime() {
   var now = newDate();
@@ -219,3 +223,7 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
   * Meaning: Will hold the value for the now identifier.
 
 ---
+
+4.
+
+```javascript
