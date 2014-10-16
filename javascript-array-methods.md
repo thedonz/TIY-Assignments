@@ -80,20 +80,43 @@ console.log('This crew member didn\'t make it: ' + shifted);
 
 ```javascript
 Array.prototype.sort()
+
+var captains = ["Kirk", "Solo", "Reynolds", "Sparrow"];
+captains.sort(); // ["Kirk", "Reynolds", "Solo", "Sparrow"]
+
 ```
 
-// Sorts the elements of an array in place and returns the array.
+// Sorts the elements of an array in place (?!) and returns the array.
 
 ```javascript
 Array.prototype.splice()
+
+var notAnXMen = ['Cyclops', ' Wolverine', ' Gambit', ' Rogue', ' Mystique'];
+
+console.log("One of these is NOT an X-Men: " + notAnXMen);
+
+var removed = notAnXMen.splice(4, 1);
+
+console.log("Ha! Found her!: " + removed);
+console.log("The Actual X-Men: " + notAnXMen);
 ```
 
 // Adds and/or removes elements from an array.
 
+----
+
 ```javascript
 Array.prototype.unshift()
+
+var firstAvenger = [" Hulk", " Iron Man", " Hawk Eye", " Black Widow"];
+
+console.log("We're missing an Avenger! " + firstAvenger);
+
+firstAvenger.unshift("Captain America");
+
+console.log("Ah, here he is! " + firstAvenger);
+
+
 ```
 
 // Adds one or more elements to the front of an array and returns the new length of the array.
-
-```
