@@ -1,3 +1,5 @@
+##MUTATORS!! (SNIKT!)##
+
 ```javascript
 Array.prototype.copyWithin()
 
@@ -124,6 +126,8 @@ console.log("Ah, here he is! " + firstAvenger);
 ----
 ----
 
+##ACCESSORS!##
+
 ```javascript
 Array.prototype.concat()
 
@@ -236,3 +240,113 @@ index = array.lastIndexOf(2, -1); //index is 3
 
 ```
 Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+
+----
+----
+##Iterators!!!##
+
+```javascript
+Array.prototype.forEach()
+
+function logArrayElements(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+}
+
+['Jabba', 'The', , 'Hutt'].forEach(logArrayElements);
+
+```
+Calls a function for each element in the array.
+
+
+```javascript
+Array.prototype.entries()
+
+var arr = ['a', 'b', 'c'];
+var eArr = arr.entries();
+
+console.log(eArr.next().value); // [0, 'a']
+console.log(eArr.next().value); // [1, 'b']
+console.log(eArr.next().value); // [2, 'c']
+
+```
+Returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+
+
+```javascript
+Array.prototype.every()
+
+function isBigEnough(element, index, array) {
+  return element >= 10;
+}
+var passed = [12, 5, 8, 130, 44].every(isBigEnough);
+
+passed = [12, 54, 18, 130, 44].every(isBigEnough);
+
+```
+
+Returns true if every element in this array satisfies the provided testing function.
+
+```javascript
+Array.prototype.some()
+
+function isBigEnough(element, index, array) {
+  return element >= 10;
+}
+var passed = [2, 5, 8, 1, 4].some(isBigEnough); //passed is false (no number is equal to, or greater than 10)
+passed = [12, 5, 8, 1, 4].some(isBigEnough); //passed is true ( 12 is bigger than 10)
+
+```
+
+Returns true if *at least one* element in this array satisfies the provided testing function.
+
+```javascript
+Array.prototype.filter()
+
+function isBigEnough(element) {
+  return element >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough); // filtered is [12, 130, 44]
+```
+
+Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+
+```javascript
+Array.prototype.find()
+
+```
+
+Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+```javascript
+Array.prototype.findIndex()
+
+```
+
+Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
+
+```javascript
+Array.prototype.keys()
+
+```
+
+Returns a new Array Iterator that contains the keys for each index in the array.
+
+```javascript
+Array.prototype.map()
+
+```
+
+Creates a new array with the results of calling a provided function on every element in this array.
+
+```javascript
+Array.prototype.reduce()
+
+```
+
+Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
+
+```javascript
+Array.prototype.reduceRight()
+
+```
+
+Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
