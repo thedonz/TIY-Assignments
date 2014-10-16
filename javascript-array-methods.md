@@ -120,3 +120,119 @@ console.log("Ah, here he is! " + firstAvenger);
 ```
 
 // Adds one or more elements to the front of an array and returns the new length of the array.
+
+----
+----
+
+```javascript
+Array.prototype.concat()
+
+var godsOlympus = ['Zeus', 'Hades', 'Poseidon'],
+    godsEgypt   = ['Set', 'Osiris', 'Ra'],
+    godsAmerica = ['Teotihuacan', 'Viracocha', 'Quetzacoatl'];
+
+var godsOfAncientWorld = godsOlympus.concat(godsEgypt, godsAmerica);
+
+
+```
+Array mixer- adds the array before the .concat to the array(s) after the (). Sweet.
+
+
+```javascript
+Array.prototype.contains()
+
+var ninjaTurtles = ['Donatello', 'Michaelangelo', 'Raphael'];
+
+console.log("Who's here? " + ninjaTurtles);
+
+var missingTurtle = ninjaTurtles.contains('Leonardo');
+
+console.log("Who's missing? " + missingTurtle);
+
+
+```
+Determines whether an array contains a certain element, returning true or false as appropriate.
+
+```javascript
+Array.prototype.join()
+
+var planeteers = new Array('Earth', 'Fire', 'Wind', 'Water', 'Heart');
+
+var captainPlanet = planeteers.join('!, ');
+
+console.log(captainPlanet + "! By your powers combined, I AM CAPTAIN PLANET!");
+
+
+```
+Joins all elements of an array into a string, forming the legendary ecological hero: Captain Planet!!
+
+
+```javascript
+Array.prototype.slice()
+
+var justiceLeague = ["Batman", " Wonder Woman", " The Flash", " Aquaman", " Superman", " Martian Manhunter",];
+
+var alienBeings = justiceLeague.slice(4,6);
+
+console.log("The Justice League of America is composed of " + justiceLeague + ". And of those," + alienBeings + " are from another world!");
+
+```
+Picks out and displays a section of the array defined by params.
+
+
+```javascript
+Array.prototype.toString()
+
+var numbers = [1, 2, 3, 4, 5];
+var anExample = numbers.toString();
+
+console.log(anExample);
+
+```
+
+Returns a string. Converts numbers to 'string' characters.
+
+
+```javascript
+Array.prototype.toLocaleString()
+
+var number = 1337;
+var date = new Date();
+var myArr = [number, date, 'foo'];
+
+var str = myArr.toLocaleString();
+
+console.log(str);
+
+```
+
+Returns a localized string representing the array and its elements.
+
+```javascript
+Array.prototype.indexOf()
+
+var array = ['code', 'dojo', 'kata', 'sensei'];
+
+var index = array.indexOf('dojo', 'sensei');
+
+console.log(index); // 1
+
+```
+
+Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found. (Practice this one more! 3/5 fingers)
+
+
+```javascript
+Array.prototype.lastIndexOf()
+
+var array = [2, 5, 9, 2];
+var index = array.lastIndexOf(2); // index is 3
+index = array.lastIndexOf(7); // index is -1
+index = array.lastIndexOf(2, 3); // index is 3
+index = array.lastIndexOf(2, 2); // index is 0
+index = array.lastIndexOf(2, -2); // index 0
+index = array.lastIndexOf(2, -1); //index is 3
+
+
+```
+Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
