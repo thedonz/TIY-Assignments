@@ -282,7 +282,7 @@ return (function(sSelectors) {
   * Type: keyword
   * Name: return
   * Meaning: return a value to the user.
-* Symbol: ( )
+* Symbol: `( )`
   * Type: Operator
   * Name: parenthesis
   * Meaning: used for function definitions
@@ -304,7 +304,7 @@ if (bSet && bStyle) { aArgs.push(''); }
   * Type: operator
   * Name: Logical AND
   * Meaning: Returns true if BOTH operands are true; otherwise, returns false.
-* Symbol: { }
+* Symbol: `{ }`
   * Type: operator
   * Name: curly braces
   * Meaning: encloses an object literal.
@@ -325,4 +325,36 @@ var car = { myCar: "Saturn", getCar: CarTypes("Honda"), special: Sales };
 * Symbol: { myCar: "Saturn" . . . }
   * Type: object
   * Name: Dictionary
-  * Meaning: Dic
+  * Meaning: Dictionaries store values in keys, which can be accessed by the user at a later time.
+
+---
+
+9.
+
+```javascript
+while (count <= 10) {
+
+```
+* Symbol: `while`
+  * Type: keyword (statement)
+  * Name: While Statement
+  * Description: The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+* Symbol: <=
+  * Type: Operator
+  * Name: less-than-or-equal-to
+  * Meaning: Returns true if the left operand is less than or equal to the right operand.
+
+---
+
+10.
+
+```javascript
+var userName = prompt("Yo passenger! What's your name?!");
+
+```
+* Symbol: `prompt();`
+  * Type: Object
+  * Name: Window Prompt
+  * Meaning: Displays a dialog with an optional message prompting the user to input some text.
+
+---
