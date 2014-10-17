@@ -1,6 +1,7 @@
 
 Examples of JavaScript code from the selected assignment
 
+1.
 
 ```javascript
 var interest = parseFloat(apr.value) / 100 / 12;
@@ -9,6 +10,8 @@ var interest = parseFloat(apr.value) / 100 / 12;
 * Value: (result of code) divided by 100 divided by 12
 
 ----
+
+2.
 
 ```javascript
 var toc = document.getElementById("TOC");
@@ -25,6 +28,9 @@ var toc = document.getElementById("TOC");
 * Value: toc = `document.createElement("div")` <-- If there is no document, create one.
 
 ----
+
+3.
+
 
 ```javascript
 function forceToUpperCase(element) {
@@ -55,6 +61,8 @@ function forceToUpperCase(element) {
   * Variables: `now`, `min`, `hour`, `minangle`, `hourangle`.
   * Values: `new Date()`: `now.getMinutes()`; `(now.getHours() % 12) + min/60;`; `min*6`; `hour*30`;
 
+----
+
 5.
 
   ```javascript
@@ -69,6 +77,7 @@ function forceToUpperCase(element) {
     * Variable: `elements`
     * Value:`document.getElementsByClassName("reveal");`
 
+---
 
 6.
 
@@ -86,6 +95,8 @@ function forceToUpperCase(element) {
   * Modifier: `else if (window.addEventListener)`
   * Modifier `else if (window.attachEvent) window.attachEvent("onload", f);`
 
+---
+
 7.
 
   ```javascript
@@ -94,6 +105,8 @@ function forceToUpperCase(element) {
 
   * Variable: `elts`
   * Value: `document.getElementsByClassName("sparkline");`
+
+---
 
 8.
 
@@ -109,6 +122,7 @@ function forceToUpperCase(element) {
   * Variable: `canvas`
   * Value: `document.createElement("canvas");`
 
+---
 
 9.
 
@@ -125,6 +139,7 @@ function forceToUpperCase(element) {
   * If Statement: `if (!types ||`
   * Value: `return false;`
 
+---
 
 10.
 
@@ -139,10 +154,8 @@ function forceToUpperCase(element) {
   * Value: `if (aborted) return; if (xhr.status >= 300) return; setTimeout(connect, retrydelay)`
 
 ----
-NEW!
-----
 
-1.
+11.
 
 ```javascript
 
@@ -157,7 +170,7 @@ NEW!
 
 ---
 
-2.
+12.
 
 ```javascript
 if (window.EventSource === undefined) {     // If EventSource is not defined,
@@ -194,7 +207,7 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 
 ---
 
-3.
+13.
 
 ```javascript
   function updateTime() {
@@ -224,7 +237,7 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 
 ---
 
-4.
+14.
 
 ```javascript
 board[4][4] = board[6][4];
@@ -252,7 +265,7 @@ board[4][4] = board[6][4];
 
 ---
 
-5.
+15.
 
 ```javascript
 
@@ -271,7 +284,7 @@ function test_wordVal(a, b) {
 
 ---
 
-6.
+16.
 
 ```javascript
 
@@ -289,7 +302,7 @@ return (function(sSelectors) {
 
 ---
 
-7.
+17.
 
 ```javascript
 if (bSet && bStyle) { aArgs.push(''); }
@@ -311,7 +324,7 @@ if (bSet && bStyle) { aArgs.push(''); }
 
 ---
 
-8.
+18.
 
 ```javascript
 var car = { myCar: "Saturn", getCar: CarTypes("Honda"), special: Sales };
@@ -329,7 +342,7 @@ var car = { myCar: "Saturn", getCar: CarTypes("Honda"), special: Sales };
 
 ---
 
-9.
+19.
 
 ```javascript
 while (count <= 10) {
@@ -346,15 +359,181 @@ while (count <= 10) {
 
 ---
 
-10.
+20.
 
 ```javascript
 var userName = prompt("Yo passenger! What's your name?!");
 
 ```
 * Symbol: `prompt();`
-  * Type: Object
+  * Type: method
   * Name: Window Prompt
   * Meaning: Displays a dialog with an optional message prompting the user to input some text.
 
 ---
+
+21.
+
+```javascript
+alert("Holy Schnikeez!!!");
+
+```
+* Symbol: `alert()`
+  * Type: method
+  * Name: Window Alert
+  * Meaning: Displays an alert dialog with the optional specified content and an OK button.
+* Symbol: `;`
+  * Type: operator
+  * Name: semi-colon
+  * Meaning: indicates the end of a line.
+
+---
+
+22.
+
+```javascript
+var sidekicks = ["Robin", "Superboy", "K-9", "Doc Brown"];
+
+```
+* Symbol: `var`
+  * Type: keyword
+  * Name: Variable Statement
+  * Meaning: Declares a variable, optionally initializing it to a value.
+* Symbol: `["Robin", "Superboy", "K-9", "Doc Brown"]`
+  * Type: Object
+  * Name: Array
+  * Meaning: A high-level, list-like object.
+
+---
+
+23.
+
+```javascript
+if (curr % 2 === 0){
+
+```
+
+* Symbol: `if`
+  * Type: operator
+  * Name: If Statement
+  * Meaning: Executes a statement if a specified condition is true. If the condition is false, another statement can be executed.
+* Symbol: `%`
+  * Type: Operator
+  * Name: Modulus
+  * Meaning: Divide and return the remainder.
+
+---
+
+24.
+
+```javascript
+var b = new Boolean(false);
+
+```
+* Symbol: `Boolean();`
+  * Type: Object
+  * Name: Boolean Object
+  * Meaning: An object wrapper for a boolean value.
+
+---
+
+25.
+
+``` javascript
+halo = new String("Combat Evolved.");
+
+```
+
+* Symbol: `String()`
+  * Type: object
+  * Name: String Object
+  * Meaning: A constructor for strings, or a sequence of characters
+
+---
+
+26.
+
+```javascript
+
+print(a + " is less than" + b);
+
+```
+
+* Symbol: `print()`
+  * Type: object
+  * Name: Print Dialog
+  * Meaning: Opens a print dialog to print the current document.
+
+---
+
+27.
+
+```javascript
+if (status == "on") {
+  total += power;
+}
+
+```
+
+* Symbol: `==`
+  * Type: operator
+  * Name: Equality Operator (Double Equal)
+  * Meaning: Converts the operands if they are **not the same type**, then applies strict comparison.
+* Symbol: `+=`
+  * Type: operator
+  * Name: Addition Assignment (Plus Equal)
+  * Meaning: Adds the value of the right operand to a variable and assigns the result to the variable.
+
+---
+
+28.
+
+```javascript
+for (var i = 0; i < numberlist.length; i++){
+
+```
+* Symbol: `<`
+  * Type: operator
+  * Name: Less Than
+  * Meaning: Operand to the left is lesser than operand to the right.
+* Symbol: `.length`
+  * Type: property
+  * Name: length property
+  * Meaning: Represents the length of an array and/or string.
+* Symbol: `++`
+  * Type: operand
+  * Name: Plus Plus
+  * Meaning: Increases the value by (1).
+
+---
+
+29.
+
+```javascript
+console.log("COWABUNGA " + "DUDE!");
+
+```
+
+* Symbol: `console.log()`
+  * Type: output
+  * Name: Console Dot Log
+  * Meaning: Outputs a message to the web console.
+* Symbol: `+`
+  * Type: operand
+  * Name: Plus
+  * Meaning: used to concatenate strings, numbers, etc.
+
+---
+
+30.
+
+```javascript
+
+list.push("Emperor Palpatine")
+
+```
+
+* Symbol: `.push()`
+  * Type: method
+  * Name: push method
+  * Meaning: Adds one or more elements to the end of an array and returns the new length of the array.
