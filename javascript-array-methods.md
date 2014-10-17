@@ -334,8 +334,20 @@ Returns the found value in the array, if an element in the array satisfies the p
 
 ```javascript
 Array.prototype.findIndex()
+//This iterator is related to the one above, and thus I'm not sure exactly how it works. In the example below, it's designed to find the index in which the prime number resides.
 
+function isPrime(element, index, array) {
+  var start = 2;
+  while (start <= Math.sqrt(element)) {
+    if (element % start++ < 1) {
+      return false;
+    }
+  }
+  return element > 1;
+}
 
+console.log([4, 6, 8, 12].findIndex(isPrime)); // -1, not found
+console.log([4, 6, 7, 12].findIndex(isPrime)); // 2
 
 ```
 
@@ -343,20 +355,39 @@ Returns the found index in the array, if an element in the array satisfies the p
 
 ```javascript
 Array.prototype.keys()
+// This one really stumped me.
+
+var arr = ['a', 'b', 'c'];
+var eArr = arr.keys();
+
+console.log(eArr.next().value); // 0
+console.log(eArr.next().value); // 1
+console.log(eArr.next().value); // 2
+
 
 ```
-
 Returns a new Array Iterator that contains the keys for each index in the array.
 
 ```javascript
 Array.prototype.map()
 
-```
+var numbers = [25, 64, 400, 3600];
 
+console.log(numbers); // [25, 64, 400, 3600]
+
+var roots = numbers.map(Math.sqrt);
+
+console.log(roots); // [ 5, 8, 20, 60 ]
+
+```
 Creates a new array with the results of calling a provided function on every element in this array.
 
 ```javascript
 Array.prototype.reduce()
+
+var total = [0, 1, 2, 3].reduce(function(a,b) {
+  return a + b;
+});
 
 ```
 
@@ -364,6 +395,12 @@ Apply a function against an accumulator and each value of the array (from left-t
 
 ```javascript
 Array.prototype.reduceRight()
+
+var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+    return a.concat(b);
+}, []);
+// flattened is [4, 5, 2, 3, 0, 1]
+
 
 ```
 
