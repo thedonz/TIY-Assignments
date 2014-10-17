@@ -261,4 +261,68 @@ function test_wordVal(a, b) {
 ```
 
 * Symbol: `function`
-  * Type: 
+  * Type: constructor
+  * Name: function
+  * Meaning: Creates a new function object.
+* Symbol: `test_worldVal`
+  * Type: identifier
+  * Name: test_worldVal
+  * Meaning: literal carrying the function's parameters.
+
+---
+
+6.
+
+```javascript
+
+return (function(sSelectors) {
+
+```
+* Symbol: `return`
+  * Type: keyword
+  * Name: return
+  * Meaning: return a value to the user.
+* Symbol: ( )
+  * Type: Operator
+  * Name: parenthesis
+  * Meaning: used for function definitions
+
+---
+
+7.
+
+```javascript
+if (bSet && bStyle) { aArgs.push(''); }
+
+```
+
+* Symbol: `if`
+  * Type: keyword
+  * Name: if
+  * Meaning: Conditional statement.
+* Symbol: `&&`
+  * Type: operator
+  * Name: Logical AND
+  * Meaning: Returns true if BOTH operands are true; otherwise, returns false.
+* Symbol: { }
+  * Type: operator
+  * Name: curly braces
+  * Meaning: encloses an object literal.
+
+---
+
+8.
+
+```javascript
+var car = { myCar: "Saturn", getCar: CarTypes("Honda"), special: Sales };
+
+```
+
+* Symbol: `var`
+  * Type: keyword
+  * Name: variable statement
+  * Meaning: Declares a variable, optionally initializing it to a value.
+* Symbol: { myCar: "Saturn" . . . }
+  * Type: object
+  * Name: Dictionary
+  * Meaning: Dic
