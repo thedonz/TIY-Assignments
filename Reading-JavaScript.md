@@ -227,3 +227,38 @@ if (window.EventSource === undefined) {     // If EventSource is not defined,
 4.
 
 ```javascript
+board[4][4] = board[6][4];
+```
+* Symbol: `board`
+  * Type: array
+  * Name: "board"
+  * Meaning: refers to an array.
+* Symbol: `[4][4]`
+  * Type: Index
+  * Name: Four
+  * Meaning: refers to the index inside the array
+* Symbol: `=`
+  * Type: Operator
+  * Name: assignor
+  * Meaning: Assigns values
+* Symbol: `board`
+  * Type: array
+  * Name: "board"
+  * Meaning: refers to an array.
+* Symbol: `[6][4]`
+  * Type: Index
+  * Name: Four
+  * Meaning: refers to the index inside the array
+
+---
+
+5.
+
+```javascript
+
+function test_wordVal(a, b) {
+
+```
+
+* Symbol: `function`
+  * Type: 
