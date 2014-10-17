@@ -312,12 +312,30 @@ Creates a new array with all of the elements of this array for which the provide
 
 ```javascript
 Array.prototype.find()
+//The following formula was transcribed from MDN. I'm not entirely sure how it works, so I've annotated the parts I'm confused below. --xdonze
+
+function isPrime(element, index, array) {
+  var start = 2; //starting at 2, I imagine, because 1 isn't being considered in this equation.
+  while (start <= Math.sqrt(element)) { //this part is the most confusing
+    if (element % start++ < 1) { //followed by this part.
+      return false;
+    }
+  }
+  return element > 1;
+}
+
+console.log([4, 6, 8, 12].find(isPrime)); //undefined, not found - none of these numbers are prime.
+console.log([4, 5, 8, 12].find(isPrime)); // 5 - I understand that it's looking for a prime #, in which it find the # 5.
 
 ```
 
 Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+
+
 ```javascript
 Array.prototype.findIndex()
+
+
 
 ```
 
