@@ -1,5 +1,6 @@
-//Chessboard
+//The Mother Freakin' Chessboard
 
+// Board
 var board = [
   ['R','N','B','K','Q','B','N','R'],
   ['P','P','P','P','P','P','P','P'],
@@ -12,6 +13,9 @@ var board = [
 
 console.log(board.join('\n') + '\n\n');
 
+// Moves Catalan Opener http://www.chess.com/opening/eco/E06_Catalan_Opening_Closed_Variation
+
+//Moves
 var moves = {
   firstMove: function() {
     board[4][3] = board[6][3];
@@ -48,7 +52,7 @@ var moves = {
     board[7][5] = ' ';
   },
 
-  eigthMove: function(){
+  eighthMove: function(){
     board[1][4] = board[0][5];
     board[0][5] = ' ';
   },
@@ -93,6 +97,103 @@ describe('Mocha test chessboard', function(){
       ['p','p','p',' ','p','p','p','p'],
       ['r','n','b','k','q','b','n','r'] ]
     );
-  })
-
-})
+  });
+  it("Third Move- board should look like:", function(){
+    moves.thirdMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q','B',' ','R'],
+      ['P','P','P','P','P','P','P','P'],
+      [' ',' ',' ',' ',' ','N',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','k','q','b','n','r'] ]
+    );
+  });
+  it("Fourth Move- board should look like:", function(){
+    moves.fourthMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q','B',' ','R'],
+      ['P','P','P','P',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      ['p','p',' ',' ','p','p','p','p'],
+      ['r','n','b','k','q','b','n','r'] ]
+    );
+  });
+  it("Fifth Move- board should look like:", function(){
+    moves.fifthMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q','B',' ','R'],
+      ['P','P','P','P',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ',' ',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','k','q','b','n','r'] ]
+    );
+  });
+  it("Sixth Move- board should look like:", function(){
+    moves.sixthMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q','B',' ','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ','p',' '],
+      ['p','p',' ',' ','p','p',' ','p'],
+      ['r','n','b','k','q','b','n','r'] ]
+    );
+  });
+  it("Seventh Move- board should look like:", function(){
+    moves.seventhMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q','B',' ','R'],
+      ['P','P','P',' ',' ','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ','p',' '],
+      ['p','p',' ',' ','p','p','b','p'],
+      ['r','n','b','k','q',' ','n','r'] ]
+    );
+  });
+  it("Eighth Move- board should look like:", function(){
+    moves.eighthMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q',' ',' ','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ',' ','p',' '],
+      ['p','p',' ',' ','p','p','b','p'],
+      ['r','n','b','k','q',' ','n','r'] ]
+    );
+  });
+  it("Ninth Move- board should look like:", function(){
+    moves.ninthMove();
+    assert.deepEqual(board,
+      [
+      ['R','N','B','K','Q',' ',' ','R'],
+      ['P','P','P',' ','B','P','P','P'],
+      [' ',' ',' ',' ','P','N',' ',' '],
+      [' ',' ',' ','P',' ',' ',' ',' '],
+      [' ',' ','p','p',' ',' ',' ',' '],
+      [' ',' ',' ',' ',' ','n','p',' '],
+      ['p','p',' ',' ','p','p','b','p'],
+      ['r','n','b','k','q',' ',' ','r'] ]
+    );
+  });
+});
