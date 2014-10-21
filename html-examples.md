@@ -26,5 +26,30 @@ TESTING!
 3.
 
 ```HTML
-<audio src="http://www.starwars.stopklatka.pl/sounds/reward.wav">Maybe I should be looking for the Millenium Falcon....
+<audio controls="controls"><source src="http://www.starwars.stopklatka.pl/sounds/reward.wav" type="audio/wav">
 </audio>
+```
+* The audio element is used to embed sound content in documents. (Like badass Empire Strikes Back quotes!)
+
+4.
+
+```HTML
+<h3>What's your name, fool?</h3>
+<form action="">
+  <label for="GET-name">Name:</label>
+  <input id="GET-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+```
+* The `<form>` element represents a document section that contains interactive controls to submit information to a web server.
+
+5.
+
+```HTML
+<video src="//www.youtube.com/embed/wdcSxM7XNG4" autoplay>Enjoy!
+</video>
+```
+
+6.
+
+```HTML
