@@ -99,3 +99,39 @@ TESTING!
 <p>Some more</p>
 <p>S'mores</p>
 <p>"You're killing me Smalls!"</p>
+```
+
+8. Description List
+```HTML
+<dl>
+  <dt>The Doctor</dt>
+  <dd> The Doctor is a <b>Time Lord</b> from the planet of <i>Gallifrey</i> who travels through time and space in a dimensionally transcendent time machine called the <a href= "http://img0.joyreactor.com/pics/post/gif-art-tardis-doctor-who-967783.gif">TARDIS</a> (Time and Relative Dimensions In Space) which takes the exterior form of a 1963 London-era police telephone call box.
+  </dd>
+</dl>
+```
+* Creates a dictionary-like description list where items are correctly indented.
+
+9. Ordered List
+```HTML
+<h4>My favorite doctors(and the actors who portrayed them)</h4>
+<ol>
+  <li>The 9th Doctor  (Christopher Eccleston)</li>
+  <li>The 11th Doctor (Matt Smith)</li>
+  <li>The 12th Doctor (Peter Capaldi)</li>
+  <li>The 4th Doctor  (Tom Baker)</li>
+  <li>The 10th Doctor (David Tennant)</li>
+</ol>
+```
+
+* A numbered list, in the proper order.
+
+10. Heading Levels
+```HTML
+<h1>"Fantastic!!"</h1>
+<h2>"Geronimooooo!!"</h2>
+<h3>"SHUT UP! SHUTTETY UP UP!"</h3>
+<h4>"Would you like a jelly baby?"</h4>
+<h5>"Allon-sy!"</h5>
+```
+
+* Implement six levels of document headings, `<h1>` being most important and `<h6>` being least.
