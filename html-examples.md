@@ -379,11 +379,18 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 
 10. Heading Levels
 ```HTML
-<h1>"Fantastic!!"</h1>
-<h2>"Geronimooooo!!"</h2>
-<h3>"SHUT UP! SHUTTETY UP UP!"</h3>
-<h4>"Would you like a jelly baby?"</h4>
-<h5>"Allon-sy!"</h5>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
 ```
 
 * Implement six levels of document headings, `<h1>` being most important and `<h6>` being least.
+
+* Example 1:http://xdonze.github.io/
+`<h1>"Fantastic!!""</h1>`
+* Example 2:http://xdonze.github.io/
+`<h2>"Geronimoooo!"</h2>`
+* Example 3:http://xdonze.github.io/
+`<h3>"Would you like a jelly baby?"</h3>`
