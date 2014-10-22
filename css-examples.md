@@ -1,0 +1,10 @@
+1.background-color
+2.border-bottom-color
+3.border-color
+4.border-left-color
+5.border-right-color
+6.border-top-color
+7.color
+8.column-rule-color
+9.outline-color
+10.text-decoration-color
