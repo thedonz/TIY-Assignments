@@ -29,7 +29,7 @@ TESTING!
 
 `<div class="no-number no-toc interface" id="blockquote-interface"></div>`
 
-2. Line Break
+2. Horizontal Rule
 
 ```HTML
 <p> "Get a shuttle ready. I shall assume full responsibility for losing them, and apologize to Lord Vader. Meanwhile, continue to scan the area!" </p>
@@ -394,3 +394,90 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 `<h2>"Geronimoooo!"</h2>`
 * Example 3:http://xdonze.github.io/
 `<h3>"Would you like a jelly baby?"</h3>`
+
+<!-- 10 More Examples for 18--Make-it-Hot -->
+
+11. HTML inline frame reference
+```HTML
+<iframe>
+</iframe>
+```
+
+* <iframe> represents a nested browsing context embedding another HTML page into the current page.
+
+* Example 1: http://xdonze.github.io/
+`<iframe width="420" height="315" src="http://www.youtube.com/embed/wdcSxM7XNG4" frameborder="0" allowfullscreen=""></iframe>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+`<iframe src="page.html" width="300" height="300">
+  <p>Your browser does not support iframes.</p>
+</iframe>`
+
+* Example 3: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+`<iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="">
+</iframe>`
+
+12. HTML Label
+```HTML
+<label></label>
+```
+
+* Label represents a caption for an item in a user interface
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+`<label>Click me <input type="text" id="User" name="Name" /></label>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+`<label for="User">Click me</label>
+<input type="text" id="User" name="Name" />`
+
+* Example 3: http://xdonze.github.io/
+`<label for="GET-name">Name:</label>`
+
+13. Image
+```HTML
+<img src="">
+```
+
+* Represents an image of the document.
+
+* Example 1: http://www.starwars.com
+`<img src="http://img.lum.dolimg.com/v1/images/posters_74a89224.jpeg?region=0%2C354%2C865%2C430&amp;width=480">`
+
+* Example 2: http://www.bbcamerica.com/doctor-who/
+`<img width="612" height="344" src="http://www.bbcamerica.com/doctor-who/files/2014/09/dw-monsters-man-hp-612x344.jpg" class="attachment-blog-thumb-lg wp-post-image" alt="dw-monsters-man-hp">`
+
+* Example 3: http://xdonze.github.io/
+`<img src="http://i1238.photobucket.com/albums/ff482/heathgk/LizLemonhighfive.gif" alt="Alt text">`
+
+14. Hyperlink
+```HTML
+<a href=""> & <a>
+```
+
+* The HTML anchor element defines a hyperlink, the named target destination for a hyperlink, or both.
+
+* Example 1: http://xdonze.github.io/
+`<a href="sweet_test.html">Sweet Tests!!</a>`
+
+* Example 2: http://xdonze.github.io/
+`<a href="2014/10/09/Never-Give-Up.html">Never Give Up, Never Surrender!</a>`
+
+* Example 3: http://xdonze.github.io/
+`<a href="https://github.com/xdonze/TIY-Assignments">The Iron Yard Assigments</a>`
+
+15. HTML Line Break Element
+```HTML
+<br>
+```
+
+* Is an empty element that produces a line break in text.
+
+* Example 1: http://xdonze.github.io/
+`<p>This is my site.<br />`
+
+* Example 2: http://xdonze.github.io/
+`It may not be perfect, but it’s a work-in-progress.<br />`
+
+* Example 3: http://xdonze.github.io/
+`Hope you’ll learn something too!<br />`
