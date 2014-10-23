@@ -26,7 +26,7 @@ Use the CSS Reference on MDN to identify ALL the styles that affect the color of
 <!-- Add 10 more CSS rules with 3 examples to your Reading-CSS.md file.
 This time look for font- and text-affecting rules (hint hint). -->
 
-11. font-family - *property specifies the size of the font – specifically the desired height of glyphs from the font.*
+11. font-family -
 
   * .exampleserif {
     font-family: Times, "Times New Roman", Georgia, serif;
@@ -38,5 +38,4 @@ This time look for font- and text-affecting rules (hint hint). -->
     font-family: "Lucida Console", Courier, monospace;
     }
 
-12. font-size
-  *
+12. font-size -  *property specifies the size of the font – specifically the desired height of glyphs from the font.*
