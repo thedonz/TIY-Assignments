@@ -481,3 +481,90 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 
 * Example 3: http://xdonze.github.io/
 `Hope you’ll learn something too!<br />`
+
+16. Strong Element
+```HTML
+<strong></strong>
+```
+
+* The strong element gives text strong importance, and is typically displayed in bold.
+
+* Example 1: http://xdonze.github.io/
+`<strong>NEW</strong>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+`<p>When doing x it is <strong>imperative</strong> to do y before proceeding.</p>
+`
+
+* Example 3: http://www.starwars.com/
+`<p>The Force is <strong>strong</strong> with this one.</p>`
+
+17. Citation Element
+```HTML
+<cite></cite>
+```
+
+* The citation element represents a reference to a creative work.
+
+* Example 1: `More information can be found in <cite>[ISO-0000]</cite>.``
+
+* Example 2: '<blockquote> "I love scotch. Scotchy scotch scotch. Here it goes down, down into my belly." <cite>Ron Burgundy, Anchorman</cite>'
+
+* Example 3: '<blockquote> "Where does he get those wonderful toys?" <cite>Jack Nicholson, The Joker</cite>'
+
+18. Article
+```HTML
+<article></article>
+```
+
+* The article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+`<article>
+  <h4>A really awesome article</h4>
+  <p>Lots of awesome text.</p>
+</article>`
+
+* Example 2: <article><p>"Extry, extry! Read all about it!"</p></article>
+
+* Example 3: <article><p><blockquote>"Why the world doesn't need Superman anymore" <cite>Lois Lane, The Daily Planet</cite></blockquote></p></article>
+
+19. Aside
+```HTML
+<aside></aside>
+```
+
+* The aside element represents a section of the page with content connected tangentially to the rest , which could be considered separate from that content.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
+`<article>
+  <p>
+    The Disney movie <em>The Little Mermaid</em> was
+    first released to theatres in 1989.
+  </p>
+  <aside>
+    The movie earned $87 million during its initial release.
+  </aside>
+  <p>
+    More info about the movie...
+  </p>
+</article>`
+
+* Example 2: http://orlando.theironyard.com
+`<aside class="sidebar"><div class="avatar-wrap">`
+
+* Example 3: http://orlando.theironyard.com
+
+20. The <i> Element
+```HTML
+<i></i>
+```
+
+* The <i> element represents a range of text that is set off from the normal text for some reason, for example, technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+`<p>The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature</p>`
+
+* Example 2: <p>'Say <i>"what"</i> again, I dare ya; I <i>double</a> dare ya!'</p>
+
+* Example 3: <p>"900 years of time and space, and I've never met <i>anyone</i> who wasn't important"</p>
