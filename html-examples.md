@@ -596,4 +596,10 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 25. Sub - Defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.
 * Example 1: "Gaaaatoraaadeeeeee!!! H<sub>2</sub>O!!!"
 * Example 2: "I'm drownin' here! And you're describing the <sub>water</sub>!!"
-* Example 3: 
+* Example 3: "Y'know, I seen me a mermaid once. I even seen me a shark eat an octopus. But I ain't never seen no phantom Russian <sub>sub</sub>marine."
+
+26. Underline - Renders text with an underline, a line under the baseline of its content.
+
+  * Example 1: This text is <u>underlined</u>.
+  * Example 2: Do you come from the land down <u>under</u>?
+  * Example 3: Lorem ipsum <u>dolorem</u>.
