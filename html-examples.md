@@ -568,3 +568,32 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 * Example 2: <p>'Say <i>"what"</i> again, I dare ya; I <i>double</a> dare ya!'</p>
 
 * Example 3: <p>"900 years of time and space, and I've never met <i>anyone</i> who wasn't important"</p>
+
+21. Emphasis Element - `<em</em>` The emphasis element marks text that has stress emphasis.
+
+* Example 1: <p>"You did <em>WHAT</em>?!!?!?"</p>
+* Example 2: <p>"For my ally is <em>The Force</em>. And a powerful ally, it is."</p>
+* Example 3: <p>"I might not be a smart man, but I <em>do</em> know what love is."</p>
+
+22. Button Element - represents a clickable button.
+
+* Example 1: <button name="button">Click me!</button>
+* Example 2: <button name="donotpress">DON'T PRESS THE RED BUTTON</button>
+* Example 3: <button name="fluxcapacitor">Once you hit 88MPH, press me.</button>
+
+23. Strikethrough element - renders text with a strikethrough, or a line through it.
+
+* Example 1: <p>"If you <s>strike</s> me down, I shall become more powerful than you can possibly imagine."</p>
+* Example 2: <p><s>"Strike me</s> down with all of your hatred and your journey towards the Dark Side will be complete!"</p>
+* Example 3: <p>"<s>SSTEEERIKE THREE</s>!! You're out!</s></p>
+
+24. The Q Element - indicates that the enclosed text is a short inline quotation.
+
+* Example 1: <p><q>"The Force will be with you--always."</q></p>
+* Example 2: <p><q>"Obi-Wan has taught you well"</q></p>
+* Example 3: <p><q>"You need? What about I need?"</q></p>
+
+25. Sub - Defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.
+* Example 1: "Gaaaatoraaadeeeeee!!! H<sub>2</sub>O!!!"
+* Example 2: "I'm drownin' here! And you're describing the <sub>water</sub>!!"
+* Example 3: 
