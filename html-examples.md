@@ -603,3 +603,36 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
   * Example 1: This text is <u>underlined</u>.
   * Example 2: Do you come from the land down <u>under</u>?
   * Example 3: Lorem ipsum <u>dolorem</u>.
+
+27. Unordered List - represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless.
+
+  * Example 1:
+    <p>Galactic Empire Database: Jedi Killed in The Great Purge</p>
+      <ul>
+        <li>Ki Adi Mundi</li>
+        <li>Plo Koon</li>
+        <li>Mace Windu</li>
+        <li>Yoda (unconfirmed)</li>
+      </ul>
+  * Example 2:
+    <p>How many licks does it take to get to the center of a Tootsie Pop?</p>
+      <ul>
+        <li>A-one</li>
+        <li>A-two</li>
+        <li>A-three</li>
+      </ul>
+  * Example 3:
+    <p>Businesses at the Church Street Exchange Building</p>
+      <ul>
+        <li>The Iron Yard</li>
+        <li>Canvs</li>
+        <li>Plansource</li>
+        <li>Echo Interactive</li>
+
+28. Title - defines the title of the document, shown in a browser's title bar or on the page's tab.
+
+  * Example 1: <title>Donze's Domain</title> -- Source: http://xdonze.github.io/
+  * Example 2: <title>Welcome to The Iron Yard</title> -- Source: http://www.theironyard.com
+  * Example 3: <title>StarWars.com | Star Wars: Episode VII and Star Wars Rebels</title> -- Source http://www.starwars.com/
+
+29. 
