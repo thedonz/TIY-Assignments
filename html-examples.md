@@ -635,4 +635,15 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
   * Example 2: <title>Welcome to The Iron Yard</title> -- Source: http://www.theironyard.com
   * Example 3: <title>StarWars.com | Star Wars: Episode VII and Star Wars Rebels</title> -- Source http://www.starwars.com/
 
-29. 
+29. Div - The `<div>` element is the generic container for flow content, which does not inherently represent anything.
+
+  * Example 1: `<div><p>Oh, hello! Welcome to my file!</p></div>`
+  * Example 2: `<div class="container-fluid gray-dark-bg">`
+  * Example 3: ` <div class="logo"><a href="/"><img src="/images/iron-yard-logo.svg" style="preserveAspectRatio=MinYMin slice"/></a></div>`
+
+30. Code - represents a fragment of computer code. It's displayed in monospace.
+
+  * Example 1 - `<code>function () { console.log("Howdy!");}</code>`
+  * Example 2 - `<code>var theIronYard = awesome * aMillion;</code>`
+  * Example 3 - `<code>span { color: red;}`</code>
+  
