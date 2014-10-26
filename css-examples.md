@@ -132,3 +132,25 @@ This time look for font- and text-affecting rules (hint hint). -->
       text-decoration-style: wavy;
       text-decoration-color: white;
     }
+
+21. Float - specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it.
+
+  * `<style type="text/css">
+      div { border: solid red; max-width: 70ex; }
+      h4 { float: left; margin: 0; }
+      </style
+      <h4>HOWDY!!</h4>`
+  * #darthvader {
+    float: right;
+    }
+  * span {
+    float: none;
+    }
+
+22. Clear - specifies whether an element can be next to floating elements that precede it or must be moved down below them.
+
+  * `p { clear: none}`
+  * `h2 { clear: left }`
+  * `h3 { clear: right}`
+
+23. Position - 
