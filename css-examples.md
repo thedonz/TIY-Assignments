@@ -153,4 +153,41 @@ This time look for font- and text-affecting rules (hint hint). -->
   * `h2 { clear: left }`
   * `h3 { clear: right}`
 
-23. Position - 
+23. Position - chooses alternative rules for positioning elements, designed to be useful for scripted animation effects.
+
+  * p {
+      position: absolute;
+      left: 10px;
+    }
+  * span {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    }
+  * h1 {
+    position: fixed;
+    top: 5%;
+    }
+
+24. Fullscreen - `:fullscreen` applies to any element that's currently being displayed in full-screen mode.
+
+  * `*:fullscreen {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:0;
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    }`
+  * h1:fullscreen {
+      border:1px solid #f00;
+    }
+  * p:fullscreen {
+      font-size: 200%;
+    }
+
+25. 
