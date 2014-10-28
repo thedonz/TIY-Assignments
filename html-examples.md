@@ -29,7 +29,7 @@ TESTING!
 
 `<div class="no-number no-toc interface" id="blockquote-interface"></div>`
 
-2. Line Break
+2. Horizontal Rule
 
 ```HTML
 <p> "Get a shuttle ready. I shall assume full responsibility for losing them, and apologize to Lord Vader. Meanwhile, continue to scan the area!" </p>
@@ -394,3 +394,256 @@ The `<hr>` element represents a thematic break between paragraph-level elements.
 `<h2>"Geronimoooo!"</h2>`
 * Example 3:http://xdonze.github.io/
 `<h3>"Would you like a jelly baby?"</h3>`
+
+<!-- 10 More Examples for 18--Make-it-Hot -->
+
+11. HTML inline frame reference
+```HTML
+<iframe>
+</iframe>
+```
+
+* <iframe> represents a nested browsing context embedding another HTML page into the current page.
+
+* Example 1: http://xdonze.github.io/
+`<iframe width="420" height="315" src="http://www.youtube.com/embed/wdcSxM7XNG4" frameborder="0" allowfullscreen=""></iframe>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+`<iframe src="page.html" width="300" height="300">
+  <p>Your browser does not support iframes.</p>
+</iframe>`
+
+* Example 3: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+`<iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="">
+</iframe>`
+
+12. HTML Label
+```HTML
+<label></label>
+```
+
+* Label represents a caption for an item in a user interface
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+`<label>Click me <input type="text" id="User" name="Name" /></label>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+`<label for="User">Click me</label>
+<input type="text" id="User" name="Name" />`
+
+* Example 3: http://xdonze.github.io/
+`<label for="GET-name">Name:</label>`
+
+13. Image
+```HTML
+<img src="">
+```
+
+* Represents an image of the document.
+
+* Example 1: http://www.starwars.com
+`<img src="http://img.lum.dolimg.com/v1/images/posters_74a89224.jpeg?region=0%2C354%2C865%2C430&amp;width=480">`
+
+* Example 2: http://www.bbcamerica.com/doctor-who/
+`<img width="612" height="344" src="http://www.bbcamerica.com/doctor-who/files/2014/09/dw-monsters-man-hp-612x344.jpg" class="attachment-blog-thumb-lg wp-post-image" alt="dw-monsters-man-hp">`
+
+* Example 3: http://xdonze.github.io/
+`<img src="http://i1238.photobucket.com/albums/ff482/heathgk/LizLemonhighfive.gif" alt="Alt text">`
+
+14. Hyperlink
+```HTML
+<a href=""> & <a>
+```
+
+* The HTML anchor element defines a hyperlink, the named target destination for a hyperlink, or both.
+
+* Example 1: http://xdonze.github.io/
+`<a href="sweet_test.html">Sweet Tests!!</a>`
+
+* Example 2: http://xdonze.github.io/
+`<a href="2014/10/09/Never-Give-Up.html">Never Give Up, Never Surrender!</a>`
+
+* Example 3: http://xdonze.github.io/
+`<a href="https://github.com/xdonze/TIY-Assignments">The Iron Yard Assigments</a>`
+
+15. HTML Line Break Element
+```HTML
+<br>
+```
+
+* Is an empty element that produces a line break in text.
+
+* Example 1: http://xdonze.github.io/
+`<p>This is my site.<br />`
+
+* Example 2: http://xdonze.github.io/
+`It may not be perfect, but it’s a work-in-progress.<br />`
+
+* Example 3: http://xdonze.github.io/
+`Hope you’ll learn something too!<br />`
+
+16. Strong Element
+```HTML
+<strong></strong>
+```
+
+* The strong element gives text strong importance, and is typically displayed in bold.
+
+* Example 1: http://xdonze.github.io/
+`<strong>NEW</strong>`
+
+* Example 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+`<p>When doing x it is <strong>imperative</strong> to do y before proceeding.</p>
+`
+
+* Example 3: http://www.starwars.com/
+`<p>The Force is <strong>strong</strong> with this one.</p>`
+
+17. Citation Element
+```HTML
+<cite></cite>
+```
+
+* The citation element represents a reference to a creative work.
+
+* Example 1: `More information can be found in <cite>[ISO-0000]</cite>.``
+
+* Example 2: '<blockquote> "I love scotch. Scotchy scotch scotch. Here it goes down, down into my belly." <cite>Ron Burgundy, Anchorman</cite>'
+
+* Example 3: '<blockquote> "Where does he get those wonderful toys?" <cite>Jack Nicholson, The Joker</cite>'
+
+18. Article
+```HTML
+<article></article>
+```
+
+* The article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+`<article>
+  <h4>A really awesome article</h4>
+  <p>Lots of awesome text.</p>
+</article>`
+
+* Example 2: <article><p>"Extry, extry! Read all about it!"</p></article>
+
+* Example 3: <article><p><blockquote>"Why the world doesn't need Superman anymore" <cite>Lois Lane, The Daily Planet</cite></blockquote></p></article>
+
+19. Aside
+```HTML
+<aside></aside>
+```
+
+* The aside element represents a section of the page with content connected tangentially to the rest , which could be considered separate from that content.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
+`<article>
+  <p>
+    The Disney movie <em>The Little Mermaid</em> was
+    first released to theatres in 1989.
+  </p>
+  <aside>
+    The movie earned $87 million during its initial release.
+  </aside>
+  <p>
+    More info about the movie...
+  </p>
+</article>`
+
+* Example 2: http://orlando.theironyard.com
+`<aside class="sidebar"><div class="avatar-wrap">`
+
+* Example 3: http://orlando.theironyard.com
+
+20. The <i> Element
+```HTML
+<i></i>
+```
+
+* The <i> element represents a range of text that is set off from the normal text for some reason, for example, technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.
+
+* Example 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+`<p>The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature</p>`
+
+* Example 2: <p>'Say <i>"what"</i> again, I dare ya; I <i>double</a> dare ya!'</p>
+
+* Example 3: <p>"900 years of time and space, and I've never met <i>anyone</i> who wasn't important"</p>
+
+21. Emphasis Element - `<em</em>` The emphasis element marks text that has stress emphasis.
+
+* Example 1: <p>"You did <em>WHAT</em>?!!?!?"</p>
+* Example 2: <p>"For my ally is <em>The Force</em>. And a powerful ally, it is."</p>
+* Example 3: <p>"I might not be a smart man, but I <em>do</em> know what love is."</p>
+
+22. Button Element - represents a clickable button.
+
+* Example 1: <button name="button">Click me!</button>
+* Example 2: <button name="donotpress">DON'T PRESS THE RED BUTTON</button>
+* Example 3: <button name="fluxcapacitor">Once you hit 88MPH, press me.</button>
+
+23. Strikethrough element - renders text with a strikethrough, or a line through it.
+
+* Example 1: <p>"If you <s>strike</s> me down, I shall become more powerful than you can possibly imagine."</p>
+* Example 2: <p><s>"Strike me</s> down with all of your hatred and your journey towards the Dark Side will be complete!"</p>
+* Example 3: <p>"<s>SSTEEERIKE THREE</s>!! You're out!</s></p>
+
+24. The Q Element - indicates that the enclosed text is a short inline quotation.
+
+* Example 1: <p><q>"The Force will be with you--always."</q></p>
+* Example 2: <p><q>"Obi-Wan has taught you well"</q></p>
+* Example 3: <p><q>"You need? What about I need?"</q></p>
+
+25. Sub - Defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.
+* Example 1: "Gaaaatoraaadeeeeee!!! H<sub>2</sub>O!!!"
+* Example 2: "I'm drownin' here! And you're describing the <sub>water</sub>!!"
+* Example 3: "Y'know, I seen me a mermaid once. I even seen me a shark eat an octopus. But I ain't never seen no phantom Russian <sub>sub</sub>marine."
+
+26. Underline - Renders text with an underline, a line under the baseline of its content.
+
+  * Example 1: This text is <u>underlined</u>.
+  * Example 2: Do you come from the land down <u>under</u>?
+  * Example 3: Lorem ipsum <u>dolorem</u>.
+
+27. Unordered List - represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless.
+
+  * Example 1:
+    <p>Galactic Empire Database: Jedi Killed in The Great Purge</p>
+      <ul>
+        <li>Ki Adi Mundi</li>
+        <li>Plo Koon</li>
+        <li>Mace Windu</li>
+        <li>Yoda (unconfirmed)</li>
+      </ul>
+  * Example 2:
+    <p>How many licks does it take to get to the center of a Tootsie Pop?</p>
+      <ul>
+        <li>A-one</li>
+        <li>A-two</li>
+        <li>A-three</li>
+      </ul>
+  * Example 3:
+    <p>Businesses at the Church Street Exchange Building</p>
+      <ul>
+        <li>The Iron Yard</li>
+        <li>Canvs</li>
+        <li>Plansource</li>
+        <li>Echo Interactive</li>
+
+28. Title - defines the title of the document, shown in a browser's title bar or on the page's tab.
+
+  * Example 1: <title>Donze's Domain</title> -- Source: http://xdonze.github.io/
+  * Example 2: <title>Welcome to The Iron Yard</title> -- Source: http://www.theironyard.com
+  * Example 3: <title>StarWars.com | Star Wars: Episode VII and Star Wars Rebels</title> -- Source http://www.starwars.com/
+
+29. Div - The `<div>` element is the generic container for flow content, which does not inherently represent anything.
+
+  * Example 1: `<div><p>Oh, hello! Welcome to my file!</p></div>`
+  * Example 2: `<div class="container-fluid gray-dark-bg">`
+  * Example 3: ` <div class="logo"><a href="/"><img src="/images/iron-yard-logo.svg" style="preserveAspectRatio=MinYMin slice"/></a></div>`
+
+30. Code - represents a fragment of computer code. It's displayed in monospace.
+
+  * Example 1 - `<code>function () { console.log("Howdy!");}</code>`
+  * Example 2 - `<code>var theIronYard = awesome * aMillion;</code>`
+  * Example 3 - `<code>span { color: red;}`</code>
+  
