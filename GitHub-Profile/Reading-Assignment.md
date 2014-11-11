@@ -14,7 +14,7 @@
 ---
 
 ##1. Form Elements -
-###represents a document section that contains interactive controls to submit information to a web server
+###Represents a document section that contains interactive controls to submit information to a web server
 
 Examples:
 
@@ -42,4 +42,11 @@ Examples:
 </form>
 ```
 
-##2. Web Events - 
+##2. Web Events -
+### Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the `Event` interface, and may have additional custom fields and/or functions used to get additional information about what happened.
+
+
+
+
+##3. HTTP Verbs -
+###
