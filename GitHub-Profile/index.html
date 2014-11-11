@@ -43,18 +43,18 @@
       </header>
       <div class="row content">
         <aside class="sidebar col-xs-3 col-sm-3 col-md-3">
-          <a href="#" class="thumbnail" id="avatar"><img></a>
+            <a href=""><img id="avatar" src="" alt=""></a>
           <h1> <span id="name"></span> <br>
               <small id="user"></small></h1>
 
           <hr>
 
           <ul class="bio list-unstyled">
-            <li> <i class="octicon octicon-organization"></i> {{organization}}
-            <li> <i class="octicon octicon-location"></i> {{location}}
-            <li> <i class="octicon octicon-mail"></i> {{email}}
-            <li> <i class="octicon octicon-link"></i> {{blog}}
-            <li> <i class="octicon octicon-clock"></i> {{date_stamp}}
+             <li><span id="company" class="octicon octicon-organization"></span>
+             <li><span id="location" class="octicon octicon-location"></span>
+             <li><span class="octicon octicon-mail"></span><a id="email" href=" "></a>
+             <li><span class="octicon octicon-link"></span><a id="link" href=""></a>
+             <li><span id="created" class="octicon octicon-clock"></span></li>
           </ul>
 
           <hr>
@@ -159,26 +159,8 @@
         </div>
       </div>
     </div>
-    <script src="scripts.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script>
-   
-    function drop(id) {
-          var navID = ['contrib','repos','activity'];
-          var dropDown = document.getElementById(id);
-          navID.forEach(function(value,index){
-            var dropMenu = value + 'menu';
-              if(value==id){
-                  dropDown.style.display = 'block';
-                  document.getElementById(dropMenu).style.borderColor = 'lightgray'
-                  document.getElementById(dropMenu).style.borderBottomColor = 'white'
-              }else{
-                  document.getElementById(value).style.display = 'none';
-                  document.getElementById(dropMenu).style.borderColor = 'transparent'
-              };
-          });
-        }
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>

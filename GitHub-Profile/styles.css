@@ -190,3 +190,6 @@ button.navbar-toggle {
     width: 100%;
   }
 }
+#avatar {
+  width: 300px;
+}
