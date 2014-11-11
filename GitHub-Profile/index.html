@@ -1,39 +1,188 @@
-<!-- Use Octicons!!
-min-width: 1020px
-thumbnail bootstrap - for the researches
-
-How to get .json file:
-
-1. Go to https://api.github.com/users/xdonze
-2. Type: `curl https://~~~ > package.json`
-3. Done.
-
--->
-
-
+<!doctype>
 <html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>xdonze (Carlos Donze)</title>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
-    <nav>
-      <!-- Nav Bar Goes Here <-->
-        <h1>HELLO! Is anyone here?!</h1>
-      </-->
-    </nav>
-    <aside>
-      <!-- Profile pic and left side go here <-->
-        <h1>FAIL. This is where the sidebar goes.</h1>
-      </-->
-    </aside>
-  <div
-  </body>
-  <footer>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container center">
+            <section class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse"
+                 data-target="#main-navbar-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand octicon octicon-logo-github" href="#"></a>
+            </section>
+            <section class="collapse navbar-collapse" id="main-navbar-collapse">
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control search" placeholder="Search Github">
+                </div>
+              </form>
+              <ul class="nav navbar-nav">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+              <section class="navbar-right">
+                <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+                <button type="submit" class="btn btn-default sign-in">Sign In</button>
+              </section>
+            </section>
+          </div>
+        </nav>
+      </header>
+      <div class="row content">
+        <aside class="sidebar col-xs-3 col-sm-3 col-md-3">
+          <a href="#" class="thumbnail" id="avatar"><img></a>
+          <h1> <span>{{name}}</span> <br>
+            <small>{{login}}</small></h1>
 
-  </footer>
+          <hr>
+
+          <ul class="bio list-unstyled">
+            <li> <i class="octicon octicon-organization"></i> {{organization}}
+            <li> <i class="octicon octicon-location"></i> {{location}}
+            <li> <i class="octicon octicon-mail"></i> {{email}}
+            <li> <i class="octicon octicon-link"></i> {{blog}}
+            <li> <i class="octicon octicon-clock"></i> {{date_stamp}}
+          </ul>
+
+          <hr>
+         <p>
+            <a href="" class="followers">1 Follower</a>
+            <a href="" class="starred">5 Starred</a>
+            <a href="" class="following">13 Following</a>
+          </p>
+ 
+          <hr>
+ 
+          <h5>Organizations</h5>
+          <a href="/TheIronYard--Orlando"><img class="orgs img-rounded" src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84" alt=""></a>  
+ 
+        </aside>
+        <section class="col-sm-9 col-md-9">
+            <nav  class="nav nav-tabs" id="repoMenu">
+                <li><a id="contribmenu" class="tabMenu octicon octicon-diff-added active" href="#" onclick="drop('contrib')">Contributions</a></li>
+                <li><a id="reposmenu" class="tabMenu octicon octicon-repo" href="#" onclick="drop('repos')">Repositories</a></li>
+                <li><a id="activitymenu" class="tabMenu octicon octicon-rss" href="#" onclick="drop('activity')">Public Activity</a></li>
+            </nav>
+            <section id="contrib">
+              <section class="popular col-sm-6 col-md-6">
+                <h5 class="blockHead">Popular repositories</h5>
+                <hr>
+                <ul class="popRepos list-unstyled">
+                  <li class="octicon octicon-repo-forked" style="text-indent: 0;"><a href="#">25--Scotts-Tots</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">engine</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">FEE--2014--FALL</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">The Handbook for the Front End Engine...</p>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">javascript6_examples</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">Examples from JavaScript: The Definitiv...</p>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">new-git-practice</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">Herein I practice git commands.</p>
+               </ul>
+              </section>
+              <section class="contrib2 col-sm-6 col-md-6">
+                <h5 class="blockHead">Repositories contributed to</h5>
+                <hr>
+                <ul class="reposCon2 list-unstyled">
+                  <li class="octicon octicon-repo" style="text-indent: 0;"><a href="#">asoper29/24--Weekend-Warriors</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">TheIronYard--... /FEE--201400F...</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">The Handbook for the Front End Engine...</p>
+                </ul>
+              </section>
+              <section class="pubCon col-sm-12 col-md-12">
+                <h5 class="blockHead">Contributions</h5>
+              </section>
+              <section class="conActivity col-sm-12 col-md-12">
+                <h5 class="activeHead">Contribution activity</h5>
+                <div class="lineBreaks">
+                  <h6><span class="octicon octicon-git-commit">2 Commits</span></h6>
+                  <hr>
+                  <h6><span class="octicon octicon-git-pull-request">1 Pull Requests</span></h6>
+                  <hr>
+                  <h6><span class="octicon octicon-issue-opened">1 Issue Reported</span></h6>
+                  <hr>
+                </div>
+              </section>
+            </section>
+            <section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList list-unstyled">
+                  <a href="#"><li><h3>TIY-Assignments</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>25--Scotts-Tots</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>new-git-practice</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>FEE--2014--Fall</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>xdonze.github.io</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>engine</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>javascript6_examples</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+            <section id="activity">
+              <section class="listOfActive col-sm-12 col-md-12">
+                <ul class="activeList list-unstyled">
+                  <a href="#"><li><h3>xdonze pushed to master at xdonze/xdonze.github.io</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>xdonze pushed to Front-End at xdonze/new-git-practice</h3></li></a>
+                  <hr>
+                  <a href="#"><li class="octicon octicon-repo-forked"><h3>xdonze created branch Front-End at xdonze/new-git-practice</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>xdonze pushed to 27--github-profile</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>xdonze commented on pull request</h3></li></a>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      
+  
+  
+  
+  
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script>
+      function drop(id) {
+          var navID = ['contrib','repos','activity'];
+          var dropDown = document.getElementById(id);
+          navID.forEach(function(value,index){
+            var dropMenu = value + 'menu';
+              if(value==id){
+                  dropDown.style.display = 'block';
+                  document.getElementById(dropMenu).style.borderColor = 'lightgray'
+                  document.getElementById(dropMenu).style.borderBottomColor = 'white'
+              }else{
+                  document.getElementById(value).style.display = 'none';
+                  document.getElementById(dropMenu).style.borderColor = 'transparent'
+              };
+          });
+        }
+    </script>
+  </body>
 </html>
