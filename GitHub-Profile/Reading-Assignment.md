@@ -45,6 +45,9 @@ Examples:
 ##2. Web Events -
 ### Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the `Event` interface, and may have additional custom fields and/or functions used to get additional information about what happened.
 
+* `reset` - is fired when a form is reset.
+* `submit` - A form is submitted.
+* ``
 
 
 
