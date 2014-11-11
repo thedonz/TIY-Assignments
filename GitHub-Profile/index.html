@@ -44,8 +44,8 @@
       <div class="row content">
         <aside class="sidebar col-xs-3 col-sm-3 col-md-3">
           <a href="#" class="thumbnail" id="avatar"><img></a>
-          <h1> <span>{{name}}</span> <br>
-            <small>{{login}}</small></h1>
+          <h1> <span id="name"></span> <br>
+              <small id="user"></small></h1>
 
           <hr>
 
@@ -159,16 +159,12 @@
         </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      
-  
-  
-  
-  
-  
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script>
-      function drop(id) {
+   
+    function drop(id) {
           var navID = ['contrib','repos','activity'];
           var dropDown = document.getElementById(id);
           navID.forEach(function(value,index){
