@@ -10,10 +10,10 @@
   * directive -- keep in mind that some directives can only be used on specific HTML elements!
     * ~~`ngApp`~~
     * ~~`ngBind`~~
-    * `ngClass`
-    * `ngClick`
-    * `ngController`
-    * `ngDblclick`
+    * ~~`ngClass`~~
+    * ~~`ngClick`~~
+    * ~~`ngController`~~
+    * ~~`ngDblclick`~~
     * `ngForm`
     * `ngKeyup`
     * `ngModel`
@@ -110,6 +110,66 @@ it('should check ng-bind', function() {
 ```
 
 ###7 `ngClass`
+
+**Description** - Allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added.
+
+**Arguments** -
+
+  * ngClass (expression) - _Expression to eval._
+
+**Return Value** - n/a
+
+###8 `ngClick`
+
+**Description** - allows you to specifiy custom behavior when an element is clicked.
+
+**Arguments** -
+
+  * ngClick (expression) - _Expression to evaluate upon click. (Event object is available as `$event`)_
+
+**Example** -
+
+```HTML
+<button ng-click="count = count + 1" ng-init="count=0">
+  Increment
+</button>
+<span>
+  count: {{count}}
+</span>
+```
+```javascript
+it('should check ng-click', function() {
+  expect(element(by.binding('count')).getText()).toMatch('0');
+  element(by.css('button')).click();
+  expect(element(by.binding('count')).getText()).toMatch('1');
+});
+```
+###9. `ngController`
+
+**Description** - attaches a controller class to the view. This is a key aspect of how angular supports the principles behind the MVC design pattern.
+
+**Arguments** -
+
+* ngController (expression) - _Name of a constructor function registered with the current $controllerProvider or an expression that on the current scope evaluates to a constructor function._
+
+###10. `ngDblclick`
+
+**Description** - allows you to specify custom behavior on a dblclick event.
+
+**Arguments** -
+
+* ngDblclick (expression) - _Expression to evaluate upon a dblclick. (The Event object is available as `$event`)_
+
+**Example**
+
+```html
+<button ng-dblclick="count = count + 1" ng-init="count=0">
+  Increment (on double click)
+</button>
+count: {{count}}
+```
+
+###11. `ngForm`
 
 **Description** - 
 
