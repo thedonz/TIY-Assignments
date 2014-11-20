@@ -14,8 +14,8 @@
     * ~~`ngClick`~~
     * ~~`ngController`~~
     * ~~`ngDblclick`~~
-    * `ngForm`
-    * `ngKeyup`
+    * ~~`ngForm`~~
+    * ~~`ngKeyup`~~
     * `ngModel`
     * `ngRepeat`
     * `ngSubmit`
@@ -171,8 +171,35 @@ count: {{count}}
 
 ###11. `ngForm`
 
-**Description** - 
+**Description** - Nestable alias of `form` directive. HTML does not allow nesting of form elements. Its purpose is to group controls, not to replace the `<form>` tag. **This directive executes at priority level 0.**
 
 **Arguments** -
+
+  * ngForm (string) - _Name of the form. If specified, the form controller will be published into related scope, under this name._
+
+**Example** - n/a
+
+###12. `ngKeyup`
+
+**Description** - Specify custom behavior on keyup event.
+
+**Arguments** -
+
+  * ngKeyup (expression) - Expression to evaluate upon keyup. (Event object is available as `$event` and can be interrogated for keyCode, altKey, etc.)
+
+**Example**
+```HTML
+<p>Typing in the input box below updates the key count</p>
+<input ng-keyup="count = count + 1" ng-init="count=0"> key up count: {{count}}
+
+<p>Typing in the input box below updates the keycode</p>
+<input ng-keyup="event=$event">
+<p>event keyCode: {{ event.keyCode }}</p>
+<p>event altKey: {{ event.altKey }}</p>
+```
+
+###13. `ngModel`
+
+**Description** - binds an `input`, `select`, `textarea` (or custom form control) to a property on the scope using NgModelController, which is created and exposed by this directive. **Executes at priority level 1**
 
 **Example** -
